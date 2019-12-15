@@ -1,0 +1,81 @@
+\chapter{Diskussion}
+\label{sec:diskussion}
+
+Plausibilität Heizwert
+
+Plausibilität Brennwert
+
+Plausibilität TS
+
+Plausibilität Wassergehalt
+
+Plausibilität Glühverlust
+
+Plausibilität Carbonatgehalt
+
+Plausibilität TIC
+
+
+Die wichtigste anorganische Kohlenstoffquelle in der Müllprobe sind vermutlich Carbonate.
+Carbonate sind wichtige Füll und Zuschlagstoffe für Papier, Pappe und diverse Kunststoffe. Herkömmliches Papier kann dabei einen Füllstoffanteil von bis zu 30 \% aufweisen. In Kunststoffen dient Calciumcarbonat unter anderem zur Steigerung der Schlagfestigkeit. 
+
+Die unbekannte Zusammensetzung der Müllprobe und die uneinheitliche Anwendung von Zuschlag- und Füllstoffen lassen kaum einen Vergleich mit anderen Proben zu. 
+
+
+
+Wikipedia::
+Wichtige Füllstoffe von thermoplastischen Kunststoffen sind:
+
+Glasfasern, Glaskugeln und Glasbruch
+mineralische Füllstoffe wie Calciumcarbonat und Talkum
+Kohlenstofffasern (Kurzfasern)
+Ruße
+
+Bei der Papierherstellung werden vor allem Silikate, meist Kaolin, eine weiße Porzellanerde, als Füllstoff verwendet. Kaolin macht das Papier undurchsichtiger (opaker), weißer und erhöht die Rohdichte. Auch gibt der Füllstoff dem Papier eine glattere Oberfläche, da er die Hohlräume zwischen den Fasern auffüllt. Papier kann, abhängig von der Sorte, bis zu 30 % Füllstoff enthalten.
+
+Als Füllstoff werden oft Carbonate verwendet, meistens Kreide, aber ebenso Sulfate wie Gips oder Oxide, beispielsweise Titandioxid. Bariumsulfat kommt als Füllstoff zur Herstellung von Barytpapier in Betracht, das dadurch auffallend schwer ist.[3] 
+
+Heizwerte Plausibel siehe Quelle\\
+
+Also könnte jeder Carbonatgehalt gerechtfertigt sein\\
+
+Kehrricht im Müll?
+
+Quelle in der Bibliothek suchen
+
+Plausibilität TC
+
+Plausibilität Cl-Gehalt\\
+
+\begin{tikzpicture}
+\begin{axis}[
+xbar=1pt,% space of 0pt between adjacent bars
+bar width=11,
+width=15cm,
+height=11cm,
+%minor y tick num=4,
+xmax=40,xmin=-40,
+x tick label style={/pgf/number format/.cd,%
+	scaled x ticks = false,
+	set decimal separator={,},
+	fixed},
+symbolic y coords={Zn,Cl,Mn,Uub,As},
+ytick=data,
+xtick={-30.5,-20.5,-10.5,0,10.5,20.5,30.5},
+grid=major,
+%enlargelimits=0.15,
+]
+\addplot coordinates {
+	(-10.3,Mn) (15.4,Cl) (5,Zn) (24,Uub) (30,As)
+};
+\addplot coordinates {
+	(-3,Mn) (5,Cl) (15,Zn) (20,Uub) (35,As)
+};
+\addplot coordinates {
+	(-8,Mn) (-19,Cl) (20,Zn) (30,Uub) (5,As)
+};
+
+\end{axis}
+\end{tikzpicture}
+
+\nocite{ersatzbrennstoffe,PolymerServiceGmbHMerseburg.13.08.2019,Wikipedia.21.11.2019,Skript}
