@@ -17,11 +17,11 @@
 	Masse Tiegel (original Abfall)	& $\si{\gram}$ &28,4613 & 29,0690\\
 	Masse original Abfall (zur Trocknung) & $\si{\gram}$ &2,976 & 2,878\\
 	\cline{3-4}
-	Trockensubstanz orginal Abfall & \text{Ma.-\%} & \multicolumn{2}{c}{96,71\%}  \\
+	Trockensubstanz original Abfall & \text{Ma.-\%} & \multicolumn{2}{c}{96,71\%}  \\
 	\cline{3-4}
-	Masse org. Abfall (zur Verbrennung) & $\si{\gram}$ & 2,878& 0,609\\
+	Masse org. Abfall (zur Verbrennung) & $\si{\gram}$ & 2,878& 2,203\\
 	\cline{3-4}
-	org. Trockensubstanz original Abfall &\text{Ma.-\%} &\multicolumn{2}{c}{ 79,54\% }  \\
+	org. Trockensubstanz original Abfall &\text{Ma.-\%} &\multicolumn{2}{c}{ 18,96\% }  \\
 	\hline
 	\multicolumn{2}{c|}{\textbf{Messung TIC}}   & \textbf{Masse $\left[ \si{\gram} \right] $} & \textbf{Messergebnis $\left[ \si{\micro \volt
 	\per \minute}  \right] $} \\
@@ -76,26 +76,7 @@
 Im folgenden Abschnitt sind die Messwerte für die Massen %$\left[\si{\gram}\right]$ 
 der Müll- und der Carbonatproben aufgeführt, sowie deren per Software berechnetes Messergebnis $\left[\si{\micro \volt \per \minute}\right]$. Alle Werte für den TIC-Gehalt in Tabelle \ref{master_messwerttabelle} wurden vor der Trocknung der Proben aufgenommen.
 
-%Tabelle Zeiten Start
-%\vspace*{-2.5mm}
-%\renewcommand{\arraystretch}{1.2}
-%\begin{table}[h!]
-%	\centering 
-%	\caption{Massen (vor Trocknung) und Ergebnisse der Messung}
-%	%\resizebox{0.9\textwidth}{!}{ 
-%		\begin{tabulary}{23cm}{L|C|C}
-%			\textbf{Probe} & \textbf{Masse} $\boldsymbol{m \left[\si{\gram}\right]}$ & \textbf{Messergebnis} $\boldsymbol{e \left[\si{\micro \volt \per \minute}\right]}$\\ 
-%			\hline  
-%			Abfallprobe für TIC-Messung		& 0,9940  	& 40.329,7\\
-%			Abfallprobe für TIC-Messung 2	& 0,9990 	& 55.644,0\\
-%			Kalibrierpunkt 1 ($CaCO_3$)		& 0,0618 	& 33.472,8\\
-%			Kalibrierpunkt 2 ($CaCO_3$)		& 0,0730 	& 37.642,8\\
-%		\end{tabulary}
-%\label{tic}
-%\end{table}
-%\FloatBarrier
-%Ende Zeiten Tabelle
-
+\vspace*{-5mm}
 \subsubsection{Bestimmung des Carbonatgehaltes $\boldsymbol{\chi}$ für Probe 1}
 \begin{flalign}
 	 	\frac{m_{\text{Abfall-Carbonat}}}{e_{\text{Abfall-Carbonat}}} &=	\frac{m_{\text{Carbonat}}}{e_{\text{Carbonat}}} \\[5pt]
@@ -118,11 +99,22 @@ m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
 \chi_{\text{Abfall-Carbonat}} 	&= \underline{\underline{0,10284 \approx 10,3 \%}}
 \end{flalign}
 
+\vspace*{-5mm}
+
+\subsubsection{Mittlerer Carbonatgehalt}
+\begin{flalign}
+	\chi_{\text{Abfall-Carbonat,mittel}} &= \frac{\chi_1+\chi_2}{2} = \frac{7,5\%+10,3\%}{2}\\[2mm]
+										 &= \underline{\underline{8,9\%}}
+\end{flalign}
+
+\newpage
+
+Die aufgenommenen Messergebnisse mit den zugehörigen Graphen des Computerprogramms lassen sich in den Abbildungen \ref{dia:k1} bis \ref{dia:m2} nachvollziehen.
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/CaCO3_k1}
-	\caption{Kalibrierkurve 1 für \ce{CaCO3}}
+	\includegraphics[width=0.59\textwidth]{img/CaCO3_k1}
+	\caption{Messkurve 1 für Kalibrierung mit \ce{CaCO3}}
 	\label{dia:k1}
 \end{figure}
 \FloatBarrier
@@ -131,8 +123,8 @@ m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/CaCO3_k2}
-	\caption{Kalibrierkurve 1 für \ce{CaCO3}}
+	\includegraphics[width=0.59\textwidth]{img/CaCO3_k2}
+	\caption{Messkurve 2 für Kalibrierung mit \ce{CaCO3}}
 	\label{dia:k2}
 \end{figure}
 \FloatBarrier
@@ -141,7 +133,7 @@ m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/Muell_V1}
+	\includegraphics[width=0.59\textwidth]{img/Muell_V1}
 	\caption{Messkurve für Müllprobe 1}
 	\label{dia:m1}
 \end{figure}
@@ -151,7 +143,7 @@ m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/Muell_V2}
+	\includegraphics[width=0.59\textwidth]{img/Muell_V2}
 	\caption{Messkurve für Müllprobe 2}
 	\label{dia:m2}
 \end{figure}
@@ -160,49 +152,62 @@ m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
 
 \newpage
 
-\begin{center}
-	\begin{tikzpicture}
-	\begin{axis}[
-	xlabel={$m \left[\si{\milli \gram}\right]$},
-	ylabel={$\Phi \left[\si{\micro \volt \minute}\right]$},
-	xmin = 45,
-	xmax = 120,
-	ymin=20000,
-	ymax=70000,
-	axis x line=bottom,
-	axis y line=left,
-	legend style={
-		at={(1.1,0.97)},anchor=north west}]
-	
-	\addplot [domain=0:200, samples=101,dotted]{539.91*x+106.15};
-	\addlegendentry{Verlauf der Messdaten};
-	%\addplot [domain=0:200, samples=101,dashed]{476.91*x + 3876.1};
-	\addplot [domain=0:200, samples=101,]{372.32*x + 10463};
-	\addlegendentry{Kalibrierkurve $(372.32*x + 10463)$};
-	\addplot+ [mark=*, color=black] coordinates {(74.55,40329.7)};
-	\addlegendentry{\ce{CaCO3}-Müllprobe 1};
-	\addplot [mark=*, color=black] coordinates {(102.9,55644.0)};
-	\addlegendentry{\ce{CaCO3}-Müllprobe 2};
-	\addplot [mark=x, color=blue, only marks] coordinates {(61.8,33472.8) (73.0,37642.8)};
-	\addlegendentry{\ce{CaCO3}-Blindproben};
-	
-	\addplot [mark=x, color=red] coordinates {(74.5,40329.7)};
-	\addlegendentry{Kalibrierpunkt (berechnet)};
-	\end{axis}%
-	\end{tikzpicture}%
-\end{center}
+Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind diese im Diagramm \ref{dia:kalibrierkurve} aufgezeigt und werden mittels Abweichungsrechnung ab Gleichung \ref{gl:abweichung} weiter analysiert.
+
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		xlabel={$m \left[\si{\milli \gram}\right]$},
+		ylabel={$\Phi \left[\si{\micro \volt \minute}\right]$},
+		xmin = 45,
+		xmax = 120,
+		width= 15cm,
+		height=7cm,
+		ymin=20000,
+		ymax=70000,
+		axis x line=bottom,
+		axis y line=left,
+		legend style={
+			at={(0.2,-0.25)},anchor=north west}]
+		
+		\addplot [domain=0:200, samples=101,dotted]{540.24*x + 54.501};
+		\addlegendentry{Verlauf der Messdaten $(540.24*x + 54.501)$};
+		%\addplot [domain=0:200, samples=101,dashed]{476.91*x + 3876.1};
+		\addplot [domain=0:200, samples=101,]{372.32*x + 10463};
+		\addlegendentry{Kalibrierkurve $(372.32*x + 10463)$};
+		\addplot+ [mark=*, color=black] coordinates {(74.55,40329.7)};
+		\addlegendentry{\ce{CaCO3}-Müllprobe 1};
+		\addplot [mark=*, color=black] coordinates {(102.9,55644.0)};
+		\addlegendentry{\ce{CaCO3}-Müllprobe 2};
+		\addplot [mark=x, color=blue, only marks] coordinates {(61.8,33472.8) (73.0,37642.8)};
+		\addlegendentry{\ce{CaCO3}-Blindproben};
+		
+		\addplot [mark=x, color=red] coordinates {(74.5,40329.7)};
+		\addlegendentry{Kalibrierpunkt (berechnet)};
+		\end{axis}%
+		\end{tikzpicture}%
+	\end{center}
+	\caption{Kalibrierkurve zur Bestimmung des Carbonatgehaltes der \linebreak  Müllprobe 2}
+	\label{dia:kalibrierkurve}
+\end{figure}
+\FloatBarrier
+
 
 \subsubsection{Abweichung von Kalibrierkurve}
 
 \begin{flalign}
+\label{gl:abweichung}
 	a	&= \frac{\Phi_{Mess}-\Phi_{Kali}}{\Phi_{Kali}}\\[2mm]
 	a_1	&= \frac{\SI{40329.7}{\micro \volt \minute}-\SI{38219.5}{\micro \volt \minute}}{\SI{38219.5}{\micro \volt \minute}} = \underline{\underline{5,5\%}}\\[2mm]
 	a_2	&= \frac{\SI{55644.0}{\micro \volt \minute}-\SI{48773,6}{\micro \volt \minute}}{\SI{48773,6}{\micro \volt \minute}} = \underline{\underline{14,1\%}}
 \end{flalign}
 
+\newpage
 
-\section{Bestimmung des TC-Gehaltes}
-
+\section{Bestimmung des TC und weiterer Charakteristika}
+In diesem Abschnitt werden die Berechnungen und Ergebnisse zur Bestimmung der Trockensubstanz $TS$, des Wassergehaltes $W$, sowie des Glühverlustes $GV$ dargestellt. Außerdem wird neben dem Messwert des \textit{Analysegerätes} auch eine weitere Herangehensweise für die Bestimmung des $TC$ dargelegt.
+\vspace*{-3mm}
 \subsubsection{Bestimmung des Trockensubstanzgehalt $\mathbf{TS}$} 
 \begin{flalign}
 TS \left[\%\right]	&= \frac{m_{\text{Trockensubstanz}}}{m_\text{gesamt}}*100\%\\
@@ -227,15 +232,68 @@ W_{\text{org.}}		&= \frac{\SI{2,976}{\gram}-\SI{2,878}{\gram}}{\SI{2,976}{\gram}
 %VERBENNUNG
 \begin{flalign}
 GV \left[\%\right]				&= \frac{m_{\text{gesamt}}-m_{\text{Glührückstand}}}{m_\text{gesamt}}*100\%\\[2mm]
-GV_{\text{org.}} &= \frac{\SI{2,976}{\gram}-\SI{0,609}{\gram} }{\SI{2,976}{\gram}}*100\%\\
-				&= \underline{\SI{79,54}{\percent}}
+GV_{\text{org.}} &= \frac{\SI{2,878}{\gram}-\SI{2,203}{\gram} }{\SI{2,878}{\gram}}*100\%\\
+				&= \underline{\SI{23,45}{\percent}}
 \end{flalign}
+
+%Tabelle START
+\vspace*{-.5cm}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[h!]
+	\centering
+	\caption{Daten zu Trockensubstanz, Wassergehalt und Glühverlust \linebreak der Müllprobe 2}
+	\label{tab:ts_w_gv}
+	%\resizebox{10cm}{!}{
+	\begin{tabulary}{\textwidth}{C|CCC}
+		\hline
+		\textbf{Probe} & \textbf{Trockensubstanz} & \textbf{Wassergehalt} & \textbf{Glühverlust} \\ 
+		\hline
+		Original & 96,71\% & 3,29\% & 23,45\%\\
+		Nach TIC & 18,96\% & 81,04\% & - \\
+		\hline
+	\end{tabulary}
+	%}
+\end{table}
+\FloatBarrier
+\vspace*{-2.5mm}
+%Tabelle Ende
+
+\newpage
+
+\subsubsection{Bestimmung des TC der originalen Abfallprobe über Mittelwertbildung}
+Berechnung mit mittlerem Carbonatgehalt ($TIC$) und Glühverlust ($TOC$):
+\begin{flalign}
+	TC	&= TIC+TOC\\
+		&= 8,9\%+23,5\% = 32,4\%\\
+		&= \frac{\SI{32,4}{\gram}}{\SI{100}{gramm}}=\frac{\SI{324}{\gram}}{\SI{1000}{gramm}}\\
+		&\approx \underline{\SI{324}{\gram \per \kg}}
+\end{flalign}
+
+Berechnung mit mittlerem Carbonatgehalt (TIC) und vorbehandelter TIC Probe mit TC-Analyse (TOC):
+\begin{flalign}
+TC	&= TIC+TOC\\
+	&= \SI{89}{\gram \per \kg}+\SI{43,85}{\gram \per \kg}\\
+	&\approx \underline{\SI{133}{\gram \per \kg}}
+\end{flalign}
+
+Mittelwert beider Herangehensweisen:
+\begin{flalign}
+	TC 	&= \frac{\SI{133}{\gram \per \kg}+\SI{324}{\gram \per \kg}}{2}\\[2mm]
+		&= \underline{\underline{\SI{228,5}{\gram \per \kg} \quad (22,85\%)}}
+\end{flalign}
+Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert von \SI{274,26}{\gram \per \kg} für den $TC$.
+
+
+\newpage
+
+\section{Bestimmung von Brenn- und Heizwert}
+Brenn- und Heizwert wurden mittels Näherungsformeln nach \textsc{Shin} bestimmt und geben Auskunft über die Wertigkeit der Müllprobe als Ersatzbrennstoff. Für die Berechnung wurden die Ergebnisse aus Tabelle \ref{tab:ts_w_gv} genutzt.
 
 \subsubsection{Bestimmung des Brennwertes $\mathbf{H_s}$}
 \begin{flalign}
 	H_s \left[\si{\kilo \joule \per \kg}\right]		&= 523*GV^{0,77}\\
-	H_s(org.)	&= 523*79,54\%^{0,77}\\	
-				&= \underline{\underline{\SI{15203,82}{\kilo \joule \per \kg}\approx\SI{15,20}{\mega \joule \per \kg}\approx\SI{4,2}{\kWh \per \kg}}}
+	H_s(org.)	&= 523*23,45^{0,77}\\	
+				&= \underline{\underline{\SI{5936,24}{\kilo \joule \per \kg}\approx\SI{5,94}{\mega \joule \per \kg}\approx\SI{1,65}{\kWh \per \kg}}}
 \end{flalign}
 
 
@@ -243,7 +301,7 @@ GV_{\text{org.}} &= \frac{\SI{2,976}{\gram}-\SI{0,609}{\gram} }{\SI{2,976}{\gram
 \begin{flalign}
 H_i	\left[\si{\kilo \joule \per \kg}\right]	&= H_s*\frac{TS}{100}-25*\left(0,09*H*TS+W\right)\\
 											&= H_s*\frac{TS}{100}-25*\left(0,09*\frac{GV}{15}*TS+W\right)\\[2mm]
-H_i(org.)		&= \SI{15203,82}{\kilo \joule \per \kg}*\frac{96,71\%}{100}-25*\left(0,09*\frac{79,54\%}{15}*96,71\%+3,29\%\right)\\
-				&= \underline{\underline{\SI{13467,52}{\kilo \joule \per \kg}\approx\SI{13,47}{\mega \joule \per \kg}\approx\SI{3,7}{\kWh \per \kg}}}
+H_i(org.)		&= \SI{5936,24}{\kilo \joule \per \kg}*\frac{96,71}{100}-25*\left(0,09*\frac{23,45}{15}*96,71+3,29\right)\\
+				&= \underline{\underline{\SI{5318,51}{\kilo \joule \per \kg}\approx\SI{5,32}{\mega \joule \per \kg}\approx\SI{1.48}{\kWh \per \kg}}}
 \end{flalign}
  

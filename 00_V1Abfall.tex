@@ -44,6 +44,7 @@ hidelinks
 \usepackage[list=true]{subcaption}
 \usepackage{longtable}
 \usepackage{tikz}
+\usepackage{lastpage}
 \usepackage{pgfplots}
 
 %Einheitenpackage
@@ -88,6 +89,9 @@ hidelinks
 %nicht einrücken nach Absatz
 \setlength{\parindent}{0pt}
 
+
+\urlstyle{same}
+
 % ============= Kopf- und Fußzeile =============
 \pagestyle{fancy}
 %
@@ -97,7 +101,7 @@ hidelinks
 %%
 \lfoot{}
 \cfoot{}
-\rfoot{\pagemark}
+\rfoot[{\thepage\ of \pageref*{LastPage}}]{Seite \thepage\ von \pageref*{LastPage}}
 %%
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
