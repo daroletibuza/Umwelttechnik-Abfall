@@ -72,6 +72,7 @@
 \newpage
 
 \section{Bestimmung des TIC-Gehaltes}
+\label{sec:tic}
 
 Im folgenden Abschnitt sind die Messwerte für die Massen %$\left[\si{\gram}\right]$ 
 der Müll- und der Carbonatproben aufgeführt, sowie deren per Software berechnetes Messergebnis $\left[\si{\micro \volt \per \minute}\right]$. Alle Werte für den TIC-Gehalt in Tabelle \ref{master_messwerttabelle} wurden vor der Trocknung der Proben aufgenommen.
@@ -205,9 +206,75 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 
 \newpage
 
-\section{Bestimmung des TC und weiterer Charakteristika}
-In diesem Abschnitt werden die Berechnungen und Ergebnisse zur Bestimmung der Trockensubstanz $TS$, des Wassergehaltes $W$, sowie des Glühverlustes $GV$ dargestellt. Außerdem wird neben dem Messwert des \textit{Analysegerätes} auch eine weitere Herangehensweise für die Bestimmung des $TC$ dargelegt.
-\vspace*{-3mm}
+\section{Bestimmung des TC}
+\label{sec:tc}
+\subsubsection{Bestimmung des TC der originalen Abfallprobe über Mittelwertbildung}
+Berechnung mit mittlerem Carbonatgehalt ($TIC$) und Glühverlust ($TOC$):
+\begin{flalign}
+	TC	&= TIC+TOC\\
+		&= 8,9\%+23,5\% = 32,4\%\\
+		&= \frac{\SI{32,4}{\gram}}{\SI{100}{gramm}}=\frac{\SI{324}{\gram}}{\SI{1000}{gramm}}\\
+		&\approx \underline{\SI{324}{\gram \per \kg}}
+\end{flalign}
+
+Berechnung mit mittlerem Carbonatgehalt (TIC) und vorbehandelter TIC Probe mit TC-Analyse (TOC):
+\begin{flalign}
+TC	&= TIC+TOC\\
+	&= \SI{89}{\gram \per \kg}+\SI{43,85}{\gram \per \kg}\\
+	&\approx \underline{\SI{133}{\gram \per \kg}}
+\end{flalign}
+
+Mittelwert beider Herangehensweisen:
+\begin{flalign}
+	TC 	&= \frac{\SI{133}{\gram \per \kg}+\SI{324}{\gram \per \kg}}{2}\\[2mm]
+		&= \underline{\underline{\SI{228,5}{\gram \per \kg} \quad (22,85\%)}}
+\end{flalign}
+\FloatBarrier
+
+Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert von \SI{274,26}{\gram \per \kg} für den $TC$.
+\vspace*{-5mm}
+\begin{figure}[h!]
+\renewcommand{\arraystretch}{1.2}
+	\centering
+	\caption{Daten zum TC-Gehalt}
+	\begin{tabular}{c|c|c||c}
+	\hline
+	\textbf{TOC mit Glühverlust} & \textbf{TOC mit Analysegerät} & \textbf{Mittelwert} & \textbf{Analysegerät} \\
+	\hline
+	\SI{324}{\gram \per \kg} & \SI{133}{\gram \per \kg} & \SI{228,5}{\gram \per \kg} & \SI{274,26}{\gram \per \kg}\\
+	\hline
+	 32,4 \% & 13,3 \% & 22,85 \% & 27,43 \%\\
+	\hline
+	\end{tabular}
+\end{figure}
+\FloatBarrier
+
+\vspace*{-5mm}
+\begin{figure}[h!]
+	\renewcommand{\arraystretch}{1.2}
+	\centering
+	\caption{Daten zu den Kohlenstoffgehalten}
+	\label{tab:tc}
+	\begin{tabular}{c|c|c||c}
+		\hline
+		\textbf{Kohlenstofftyp} & \textbf{Messwert 1} & \textbf{Messwert 2} & \textbf{Mittelwert}  \\
+		\hline
+		TOC		&	23,45\%		& 4,39\%	& $\approx 14\%$\\
+		TIC		&	7,5\%		& 10,3\%	& $\approx 9\%$ \\
+		TC		&	22,85\%		& 27,43\%	& $\approx 25\%$ \\
+		\hline
+	\end{tabular}
+\end{figure}
+\FloatBarrier
+
+\newpage
+
+\section{Bestimmung von Brenn- und Heizwert}
+In diesem Abschnitt werden die Berechnungen und Ergebnisse zur Bestimmung der Trockensubstanz $TS$, des Wassergehaltes $W$, sowie des Glühverlustes $GV$ dargestellt. \linebreak
+Brenn- und Heizwert wurden mittels Näherungsformeln nach \textsc{Shin} bestimmt und geben Auskunft über die Wertigkeit der Müllprobe als Ersatzbrennstoff. Für die Berechnung wurden die Ergebnisse aus Tabelle \ref{tab:ts_w_gv} genutzt.
+
+\vspace*{3mm}
+
 \subsubsection{Bestimmung des Trockensubstanzgehalt $\mathbf{TS}$} 
 \begin{flalign}
 TS \left[\%\right]	&= \frac{m_{\text{Trockensubstanz}}}{m_\text{gesamt}}*100\%\\
@@ -216,6 +283,8 @@ TS_{\text{TIC}}		&= \frac{\SI{7,340}{\gram}}{\SI{38,717}{\gram}}*100\%\\
 TS_{\text{org.}}		&= \frac{\SI{2,878}{\gram}}{\SI{2,976}{\gram}}*100\%\\
 &=\underline{96,71\%}
 \end{flalign}
+
+\vspace*{3mm}
 
 \subsubsection{Bestimmung des Wassergehaltes $\mathbf{W}$} 
 %Trockensubstanz TIC = 38,717 dann 7,340
@@ -228,12 +297,14 @@ W_{\text{org.}}		&= \frac{\SI{2,976}{\gram}-\SI{2,878}{\gram}}{\SI{2,976}{\gram}
 &=\underline{3,29\%}
 \end{flalign}
 
+\vspace*{3mm}
+
 \subsubsection{Bestimmung des Glühverlustes $\mathbf{GV}$}
 %VERBENNUNG
 \begin{flalign}
 GV \left[\%\right]				&= \frac{m_{\text{gesamt}}-m_{\text{Glührückstand}}}{m_\text{gesamt}}*100\%\\[2mm]
 GV_{\text{org.}} &= \frac{\SI{2,878}{\gram}-\SI{2,203}{\gram} }{\SI{2,878}{\gram}}*100\%\\
-				&= \underline{\SI{23,45}{\percent}}
+&= \underline{\SI{23,45}{\percent}}
 \end{flalign}
 
 %Tabelle START
@@ -257,37 +328,6 @@ GV_{\text{org.}} &= \frac{\SI{2,878}{\gram}-\SI{2,203}{\gram} }{\SI{2,878}{\gram
 \FloatBarrier
 \vspace*{-2.5mm}
 %Tabelle Ende
-
-\newpage
-
-\subsubsection{Bestimmung des TC der originalen Abfallprobe über Mittelwertbildung}
-Berechnung mit mittlerem Carbonatgehalt ($TIC$) und Glühverlust ($TOC$):
-\begin{flalign}
-	TC	&= TIC+TOC\\
-		&= 8,9\%+23,5\% = 32,4\%\\
-		&= \frac{\SI{32,4}{\gram}}{\SI{100}{gramm}}=\frac{\SI{324}{\gram}}{\SI{1000}{gramm}}\\
-		&\approx \underline{\SI{324}{\gram \per \kg}}
-\end{flalign}
-
-Berechnung mit mittlerem Carbonatgehalt (TIC) und vorbehandelter TIC Probe mit TC-Analyse (TOC):
-\begin{flalign}
-TC	&= TIC+TOC\\
-	&= \SI{89}{\gram \per \kg}+\SI{43,85}{\gram \per \kg}\\
-	&\approx \underline{\SI{133}{\gram \per \kg}}
-\end{flalign}
-
-Mittelwert beider Herangehensweisen:
-\begin{flalign}
-	TC 	&= \frac{\SI{133}{\gram \per \kg}+\SI{324}{\gram \per \kg}}{2}\\[2mm]
-		&= \underline{\underline{\SI{228,5}{\gram \per \kg} \quad (22,85\%)}}
-\end{flalign}
-Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert von \SI{274,26}{\gram \per \kg} für den $TC$.
-
-
-\newpage
-
-\section{Bestimmung von Brenn- und Heizwert}
-Brenn- und Heizwert wurden mittels Näherungsformeln nach \textsc{Shin} bestimmt und geben Auskunft über die Wertigkeit der Müllprobe als Ersatzbrennstoff. Für die Berechnung wurden die Ergebnisse aus Tabelle \ref{tab:ts_w_gv} genutzt.
 
 \subsubsection{Bestimmung des Brennwertes $\mathbf{H_s}$}
 \begin{flalign}
