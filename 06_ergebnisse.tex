@@ -161,11 +161,11 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 		\begin{axis}[
 		xlabel={$m \left[\si{\milli \gram}\right]$},
 		ylabel={$\Phi \left[\si{\micro \volt \minute}\right]$},
-		xmin = 45,
+		xmin = 0,
 		xmax = 120,
 		width= 15cm,
 		height=7cm,
-		ymin=20000,
+		ymin=0,
 		ymax=70000,
 		axis x line=bottom,
 		axis y line=left,
@@ -173,15 +173,15 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 			at={(0.2,-0.25)},anchor=north west}]
 		
 		\addplot [domain=0:200, samples=101,dotted]{540.24*x + 54.501};
-		\addlegendentry{Verlauf der Messdaten $(540.24*x + 54.501)$};
+		\addlegendentry{Verlauf der Messdaten $(540,24*x + 54,50)$};
 		%\addplot [domain=0:200, samples=101,dashed]{476.91*x + 3876.1};
-		\addplot [domain=0:200, samples=101,]{372.32*x + 10463};
-		\addlegendentry{Kalibrierkurve $(372.32*x + 10463)$};
+		\addplot [domain=0:200, samples=101,]{524.41*x + 141.53};
+		\addlegendentry{Kalibrierkurve $(524,41*x + 141,53)$};
 		\addplot+ [mark=*, color=black] coordinates {(74.55,40329.7)};
 		\addlegendentry{\ce{CaCO3}-Müllprobe 1};
 		\addplot [mark=*, color=black] coordinates {(102.9,55644.0)};
 		\addlegendentry{\ce{CaCO3}-Müllprobe 2};
-		\addplot [mark=x, color=blue, only marks] coordinates {(61.8,33472.8) (73.0,37642.8)};
+		\addplot [mark=x, color=blue, only marks] coordinates {(61.8,33472.8) (73.0,37642.8) (0,0)};
 		\addlegendentry{\ce{CaCO3}-Blindproben};
 		
 		\addplot [mark=x, color=red] coordinates {(74.5,40329.7)};
@@ -200,8 +200,11 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 \begin{flalign}
 \label{gl:abweichung}
 	a	&= \frac{\Phi_{Mess}-\Phi_{Kali}}{\Phi_{Kali}}\\[2mm]
-	a_1	&= \frac{\SI{40329.7}{\micro \volt \minute}-\SI{38219.5}{\micro \volt \minute}}{\SI{38219.5}{\micro \volt \minute}} = \underline{\underline{5,5\%}}\\[2mm]
-	a_2	&= \frac{\SI{55644.0}{\micro \volt \minute}-\SI{48773,6}{\micro \volt \minute}}{\SI{48773,6}{\micro \volt \minute}} = \underline{\underline{14,1\%}}
+	a_1	&= \frac{\SI{40329.7}{\micro \volt \minute}-\SI{39236,30
+		}{\micro \volt \minute}}{\SI{39236,30
+	}{\micro \volt \minute}} = \underline{\underline{2,8\%}}\\[2mm]
+	a_2	&= \frac{\SI{55644.0}{\micro \volt \minute}-\SI{54101,75}{\micro \volt \minute}}{\SI{54101,75
+		}{\micro \volt \minute}} = \underline{\underline{2,9\%}}
 \end{flalign}
 
 \newpage
@@ -273,8 +276,6 @@ Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert 
 In diesem Abschnitt werden die Berechnungen und Ergebnisse zur Bestimmung der Trockensubstanz $TS$, des Wassergehaltes $W$, sowie des Glühverlustes $GV$ dargestellt. \\
 Brenn- und Heizwert wurden mittels Näherungsformeln nach \textsc{Shin} bestimmt und geben Auskunft über die Wertigkeit der Müllprobe als Ersatzbrennstoff. Für die Berechnung wurden die Ergebnisse aus Tabelle \ref{tab:ts_w_gv} genutzt.
 
-\vspace*{3mm}
-
 \subsubsection{Bestimmung des Trockensubstanzgehalt $\mathbf{TS}$} 
 \begin{flalign}
 TS \left[\%\right]	&= \frac{m_{\text{Trockensubstanz}}}{m_\text{gesamt}}*100\%\\
@@ -283,8 +284,6 @@ TS_{\text{TIC}}		&= \frac{\SI{7,340}{\gram}}{\SI{38,717}{\gram}}*100\%\\
 TS_{\text{org.}}		&= \frac{\SI{2,878}{\gram}}{\SI{2,976}{\gram}}*100\%\\
 &=\underline{96,71\%}
 \end{flalign}
-
-\vspace*{3mm}
 
 \subsubsection{Bestimmung des Wassergehaltes $\mathbf{W}$} 
 %Trockensubstanz TIC = 38,717 dann 7,340
@@ -297,8 +296,6 @@ W_{\text{org.}}		&= \frac{\SI{2,976}{\gram}-\SI{2,878}{\gram}}{\SI{2,976}{\gram}
 &=\underline{3,29\%}
 \end{flalign}
 
-\vspace*{3mm}
-
 \subsubsection{Bestimmung des Glühverlustes $\mathbf{GV}$}
 %VERBENNUNG
 \begin{flalign}
@@ -307,20 +304,28 @@ GV_{\text{org.}} &= \frac{\SI{2,878}{\gram}-\SI{2,203}{\gram} }{\SI{2,878}{\gram
 &= \underline{\SI{23,45}{\percent}}
 \end{flalign}
 
+\subsubsection{Bestimmung des Inertstoffgehaltes $\boldsymbol{IS}$}
+%VERBENNUNG
+\begin{flalign}
+IS\left[\%\right]				&= \SI{100}{\percent}-TC-W\\
+IS_{\text{org.}} &\approx \SI{100}{\percent}-\SI{25}{\percent}-\SI{3}{\percent}\\
+&\approx \underline{\SI{72}{\percent}}
+\end{flalign}
+
 %Tabelle START
 \vspace*{-.5cm}
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
 	\centering
-	\caption{Daten zu Trockensubstanz, Wassergehalt und Glühverlust \\ der Müllprobe 2}
+	\caption{Daten zu Trockensubstanz, Wassergehalt, Glühverlust und Inertstoffgehalt \\ der Müllprobe 2}
 	\label{tab:ts_w_gv}
 	%\resizebox{10cm}{!}{
-	\begin{tabulary}{\textwidth}{C|CCC}
+	\begin{tabulary}{1.2\textwidth}{C|CC|CC}
 		\hline
-		\textbf{Probe} & \textbf{Trockensubstanz} & \textbf{Wassergehalt} & \textbf{Glühverlust} \\ 
+		\textbf{Probe} & \textbf{Trockensubstanz} & \textbf{Wassergehalt} & \textbf{Glühverlust} & \textbf{Inertstoffgehalt}\\ 
 		\hline
-		Original & 96,71\% & 3,29\% & 23,45\%\\
-		Nach TIC & 18,96\% & 81,04\% & - \\
+		Original & 96,71\% & 3,29\% & 23,45\%&76,55\%\\
+		Nach TIC & 18,96\% & 81,04\% & - & -\\
 		\hline
 	\end{tabulary}
 	%}
