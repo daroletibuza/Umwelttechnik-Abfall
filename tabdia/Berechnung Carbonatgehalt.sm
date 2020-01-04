@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7030.1435"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>3a96e687-f0d5-478a-8f06-f410c3e54739</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>true</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="true" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="450" top="9" width="163" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">e.Abfall1</e>
+          <e type="operand">40329.7</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="1" left="18" top="27" width="230" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">m.Abfall1</e>
+          <e type="operand">0.994</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">994</e>
+        </result>
+      </math>
+    </region>
+    <region id="2" left="18" top="54" width="154" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">m.CaCO3</e>
+          <e type="operand">0.0618</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="225" top="54" width="148" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">M.CaCO3</e>
+          <e type="operand">100</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" left="450" top="54" width="148" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">e.CaCO3</e>
+          <e type="operand">33427.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="450" top="90" width="144" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">e.Abfall2</e>
+          <e type="operand">55644</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="18" top="99" width="162" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">m.CaCO32</e>
+          <e type="operand">0.0618</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="225" top="99" width="123" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">M.CO3</e>
+          <e type="operand">60</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="8" left="450" top="135" width="156" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">e.CaCO32</e>
+          <e type="operand">33472.8</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="9" left="225" top="144" width="107" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">M.C</e>
+          <e type="operand">12</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="10" left="18" top="153" width="159" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">m.Abfall2</e>
+          <e type="operand">0.999</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="459" top="180" width="145" height="34" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">TOC.Glüh</e>
+          <e type="operand">23.5</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="12" left="450" top="216" width="161" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math significantDigitsMode="false">
+        <input>
+          <e type="operand">TOC.TIC</e>
+          <e type="operand">43.85</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="13" left="81" top="243" width="255" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math decimalPlaces="2" trailingZeros="true">
+        <input>
+          <e type="operand">m.C</e>
+          <e type="operand">m.CaCO3</e>
+          <e type="operand">M.C</e>
+          <e type="operand">M.CaCO3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.0074</e>
+        </result>
+      </math>
+    </region>
+    <region id="14" left="36" top="252" width="26" height="37" color="#000000" bgColor="#ffffff" fontSize="18">
+      <math>
+        <input>
+          <e type="operand">1</e>
+        </input>
+      </math>
+    </region>
+    <region id="15" left="81" top="306" width="304" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">m.CAbfall</e>
+          <e type="operand">m.C</e>
+          <e type="operand">e.Abfall1</e>
+          <e type="operand">e.CaCO3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.008947</e>
+        </result>
+      </math>
+    </region>
+    <region id="16" left="81" top="369" width="268" height="61" color="#000000" bgColor="#80ff80" fontSize="12">
+      <math decimalPlaces="3" exponentialThreshold="3" trailingZeros="true">
+        <input>
+          <e type="operand">TIC.Abfall1</e>
+          <e type="operand">m.CAbfall</e>
+          <e type="operand">m.Abfall1</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">9.00</e>
+        </result>
+      </math>
+    </region>
+    <region id="17" left="513" top="369" width="183" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">TIC.C1</e>
+          <e type="operand">m.C</e>
+          <e type="operand">m.CaCO3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">12</e>
+        </result>
+      </math>
+    </region>
+    <region id="18" left="36" top="459" width="28" height="40" color="#000000" bgColor="#ffffff" fontSize="20">
+      <math>
+        <input>
+          <e type="operand">2</e>
+        </input>
+      </math>
+    </region>
+    <region id="19" left="81" top="459" width="271" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math significantDigitsMode="false">
+        <input>
+          <e type="operand">m.C2</e>
+          <e type="operand">m.CaCO32</e>
+          <e type="operand">M.C</e>
+          <e type="operand">M.CaCO3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.0074</e>
+        </result>
+      </math>
+    </region>
+    <region id="20" left="81" top="531" width="319" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math significantDigitsMode="false">
+        <input>
+          <e type="operand">m.CAbfall2</e>
+          <e type="operand">m.C2</e>
+          <e type="operand">e.Abfall2</e>
+          <e type="operand">e.CaCO32</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">12.3281</e>
+        </result>
+      </math>
+    </region>
+    <region id="21" left="81" top="594" width="273" height="61" color="#000000" bgColor="#80ff80" fontSize="12">
+      <math decimalPlaces="3" significantDigitsMode="false" exponentialThreshold="3" trailingZeros="true">
+        <input>
+          <e type="operand">TIC.Abfall2</e>
+          <e type="operand">m.CAbfall2</e>
+          <e type="operand">m.Abfall2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.234</e>
+        </result>
+      </math>
+    </region>
+    <region id="22" left="513" top="594" width="191" height="61" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math significantDigitsMode="false">
+        <input>
+          <e type="operand">TIC.C2</e>
+          <e type="operand">m.C2</e>
+          <e type="operand">m.CaCO32</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">12</e>
+        </result>
+      </math>
+    </region>
+    <region id="23" left="36" top="693" width="28" height="40" color="#000000" bgColor="#ffffff" fontSize="20">
+      <math>
+        <input>
+          <e type="operand">3</e>
+        </input>
+      </math>
+    </region>
+    <region id="24" left="90" top="693" width="393" height="54" color="#000000" bgColor="#ffff80" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">TIC.Mittel</e>
+          <e type="operand">TIC.Abfall1</e>
+          <e type="operand">TIC.Abfall2</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">10.67</e>
+        </result>
+      </math>
+    </region>
+    <region id="25" left="468" top="792" width="280" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+      <text lang="ger">
+        <p>Vergleich mit Analysegerät:</p>
+      </text>
+    </region>
+    <region id="26" left="36" top="819" width="28" height="37" color="#000000" bgColor="#ffffff" fontSize="18">
+      <math>
+        <input>
+          <e type="operand">A</e>
+        </input>
+      </math>
+    </region>
+    <region id="27" left="108" top="819" width="318" height="47" color="#000000" bgColor="#ff0000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">TC.1</e>
+          <e type="operand">TOC.Glüh</e>
+          <e type="operand">TIC.Abfall2</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">247.3</e>
+        </result>
+      </math>
+    </region>
+    <region id="28" left="504" top="819" width="96" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">274.26</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </input>
+      </math>
+    </region>
+    <region id="29" left="117" top="891" width="120" height="34" color="#000000" bgColor="#ff0000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">TC.1</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">24.73</e>
+        </result>
+      </math>
+    </region>
+    <region id="30" left="27" top="936" width="30" height="40" color="#000000" bgColor="#ffffff" fontSize="20">
+      <math>
+        <input>
+          <e type="operand">B</e>
+        </input>
+      </math>
+    </region>
+    <region id="31" left="99" top="936" width="323" height="47" color="#000000" bgColor="#ffffff" fontSize="12">
+      <math significantDigitsMode="false">
+        <input>
+          <e type="operand">TC.2</e>
+          <e type="operand">TOC.TIC</e>
+          <e type="operand">TIC.Mittel</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">54.5208</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

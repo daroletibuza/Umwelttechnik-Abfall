@@ -7,7 +7,7 @@
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
 	\centering 
-	\caption{Messwerttabelle für den Praktikumsversuch Thermische Abfallbehandlung - Grundlagen}
+	\caption{Messwerttabelle für den Praktikumsversuch Thermische \mbox{Abfallbehandlung} - Grundlagen}
 	\resizebox{\textwidth}{!}{
 	\begin{tabulary}{23cm}{l|c|c|c}
 		\textbf{Daten} & \textbf{Einheit}  & \textbf{Vorher} & \textbf{Nachher} \\ 
@@ -71,7 +71,8 @@
 
 \newpage
 
-\section{Bestimmung des TIC-Gehaltes}
+\section{Bestimmung der totalen Kohlenstoffgehalte}
+\subsection{Bestimmung des Carbonat- und des TIC-Gehaltes}
 \label{sec:tic}
 
 Im folgenden Abschnitt sind die Messwerte für die Massen %$\left[\si{\gram}\right]$ 
@@ -80,33 +81,73 @@ der Müll- und der Carbonatproben aufgeführt, sowie deren per Software berechne
 \vspace*{-5mm}
 \subsubsection{Bestimmung des Carbonatgehaltes $\boldsymbol{\chi}$ für Probe 1}
 \begin{flalign}
-	 	\frac{m_{\text{Abfall-Carbonat}}}{e_{\text{Abfall-Carbonat}}} &=	\frac{m_{\text{Carbonat}}}{e_{\text{Carbonat}}} \\[5pt]
-		m_{\text{Abfall-Carbonat}} 		&= 	\frac{e_{\text{Abfall-Carbonat}}}{e_{\text{Carbonat}}}*m_{\text{Carbonat}}\\[5pt]
-		m_{\text{Abfall-Carbonat}} 		&= \frac{\SI{40329,7}{\micro \volt \per \minute}}{\SI{33472,8}{\micro \volt \per \minute}}*\SI{0.0618}{\gram}\\[5pt]
-		m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0.0745}{\gram}}\\[8pt]
-		\chi_{\text{Abfall-Carbonat}} 	&= \frac{m_{\text{Abfall-Carbonat}}}{m_{\text{Abfall}}}\\[5pt]
-		\chi_{\text{Abfall-Carbonat}} 	&= \frac{\SI{0.0745}{\gram}}{\SI{0.9940}{\gram}}\\[5pt]
-		\chi_{\text{Abfall-Carbonat}} 	&= \underline{\underline{0,07494 \approx 7,5 \%}}
+	 	\frac{m_{\text{Probe 1,Carbonat}}}{e_{\text{Probe 1,Carbonat}}} &=	\frac{m_{\text{Blindprobe 1}}}{e_{\text{Blindprobe 1}}} \\[5pt]
+		m_{\text{Probe 1, Carbonat}} 		&= 	\frac{e_{\text{Probe 1, Carbonat}}}{e_{\text{Blindprobe 1}}}*m_{\text{Blindprobe 1}}\\[5pt]
+		m_{\text{Probe 1, Carbonat}} 		&= \frac{\SI{40329,7}{\micro \volt \per \minute}}{\SI{33472,8}{\micro \volt \per \minute}}*\SI{0.0618}{\gram}\\[5pt]
+		m_{\text{Probe 1, Carbonat}} 		&= \underline{\SI{0.0745}{\gram}}\\[15pt]
+		\chi_{\text{Probe 1, Carbonat}} 	&= \frac{m_{\text{Probe 1, Carbonat}}}{m_{\text{Probe 1}}}= \frac{\SI{0.0745}{\gram}}{\SI{0.9940}{\gram}}\\[5pt]
+		\chi_{\text{Probe 1, Carbonat}} 	&= \underline{\underline{0,07494 \approx \SI{7,5}{\mpercent}}}
 \end{flalign}
 
+\subsubsection{Bestimmung des TIC für Probe 1}
+\begin{flalign}
+m_{C, Blindprobe 1} &= m_{Blindprobe 1}*\frac{M_C}{M_{CaCO3}}\\[4pt]
+					&= \SI{0,0618}{\gram}*\frac{\SI{12}{\gram \per \mol}}{\SI{100}{\gram \per \mol}}\\
+					&=\underline{\SI{0,0074}{\gram}}\\[15pt]
+m_{C, Probe 1} 		&= m_{C, Blindprobe 1}*\frac{e_{Probe 1}}{e_{CaCO3, Blindprobe 1}}\\[4pt]
+					&= \SI{7,4}{\milli\gram}*\frac{\SI{40329,7}{\micro \volt \per \minute}}{\SI{33472,8}{\micro \volt \per \minute}}\\
+					&=\underline{\SI{8,95}{\milli \gram}}\\[15pt]
+TIC_{Probe 1} 		&= \frac{m_{C, Probe 1}}{m_{Probe 1}}\\[4pt]
+					&= \frac{\SI{8,95}{\milli \gram}}{\SI{994,00}{\milli \gram}}\\
+					&\approx \SI{0,9}{\mpercent} = \underline{\underline{\SI{9}{\gram \per \kilogram}}}
+\end{flalign}
+\newpage
 \subsubsection{Bestimmung des Carbonatgehaltes $\boldsymbol{\chi}$ für Probe 2}
 \begin{flalign}
-\frac{m_{\text{Abfall-Carbonat}}}{e_{\text{Abfall-Carbonat}}} &=	\frac{m_{\text{Carbonat}}}{e_{\text{Carbonat}}} \\[5pt]
-m_{\text{Abfall-Carbonat}} 		&= 	\frac{e_{\text{Abfall-Carbonat}}}{e_{\text{Carbonat}}}*m_{\text{Carbonat}}\\[5pt]
-m_{\text{Abfall-Carbonat}} 		&= \frac{\SI{55644,0}{\micro \volt \per \minute}}{\SI{33472,8}{\micro \volt \per \minute}}*\SI{0,0618}{\gram}\\[5pt]
-m_{\text{Abfall-Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
-\chi_{\text{Abfall-Carbonat}} 	&= \frac{m_{\text{Abfall-Carbonat}}}{m_{\text{Abfall}}}\\[5pt]
-\chi_{\text{Abfall-Carbonat}} 	&= \frac{\SI{0,1027}{\gram}}{\SI{0.9990}{\gram}}\\[5pt]
-\chi_{\text{Abfall-Carbonat}} 	&= \underline{\underline{0,10284 \approx 10,3 \%}}
+\frac{m_{\text{Probe 2,Carbonat}}}{e_{\text{Probe 2,Carbonat}}} &=	\frac{m_{\text{Blindprobe 1}}}{e_{\text{Blindprobe 1}}} \\[5pt]
+m_{\text{Probe 2,Carbonat}} 		&= 	\frac{e_{\text{Probe 2,Carbonat}}}{e_{\text{Blindprobe 1}}}*m_{\text{Blindprobe 1}}\\[5pt]
+m_{\text{Probe 2,Carbonat}} 		&= \frac{\SI{55644,0}{\micro \volt \per \minute}}{\SI{33472,8}{\micro \volt \per \minute}}*\SI{0,0618}{\gram}\\[5pt]
+m_{\text{Probe 2,Carbonat}} 		&= \underline{\SI{0,1027}{\gram}}\\[8pt]
+\chi_{\text{Probe 2,Carbonat}} 		&= \frac{m_{\text{Probe 2,Carbonat}}}{m_{\text{Probe 2}}}=\frac{\SI{0,1027}{\gram}}{\SI{0.9990}{\gram}}\\[5pt]
+\chi_{\text{Probe 2,Carbonat}} 		&= \underline{\underline{0,10284 \approx  \SI{10,3}{\mpercent}}}
 \end{flalign}
-
-\vspace*{-5mm}
-
-\subsubsection{Mittlerer Carbonatgehalt}
+\vspace*{-7mm}
+\subsubsection{Bestimmung des TIC für Probe 2}
+\vspace*{-2.5mm}
 \begin{flalign}
-	\chi_{\text{Abfall-Carbonat,mittel}} &= \frac{\chi_1+\chi_2}{2} = \frac{7,5\%+10,3\%}{2}\\[2mm]
-										 &= \underline{\underline{8,9\%}}
+m_{C, Blindprobe 1} 	&= m_{Blindprobe 1}*\frac{M_C}{M_{CaCO3}}\\[4pt]
+						&= \SI{0,0618}{\gram}*\frac{\SI{12}{\gram \per \mol}}{\SI{100}{\gram \per \mol}}\\
+						&=\underline{\SI{0,0074}{\gram}}\\[10pt]
+m_{C, Probe 2} 			&= m_{C, Blindprobe 1}*\frac{e_{Probe 2}}{e_{CaCO3, Blindprobe 1}}\\[4pt]
+						&= \SI{7,4}{\milli\gram}*\frac{\SI{55644,0}{\micro \volt \per \minute}}{\SI{33472.8}{\micro \volt \per \minute}}\\
+						&=\underline{\SI{12,33}{\milli \gram}}\\[10pt]
+TIC_{Probe 2} 			&= \frac{m_{C, Probe 2}}{m_{Probe 2}}\\[4pt]
+						&= \frac{\SI{12,33}{\milli \gram}}{\SI{999,00}{\milli \gram}}\\
+						&\approx \SI{1,2}{\mpercent} = \underline{\underline{\SI{12,3}{\gram \per \kilogram}}}
 \end{flalign}
+
+\vspace*{-7mm}
+\begin{figure}[h!]
+	\renewcommand{\arraystretch}{1.2}
+	\centering
+	\caption{Daten zum TIC}
+	\label{tab:tic}
+	\begin{tabular}{c|c|c|c}
+		\hline
+		 					& \textbf{Probe 1} 			& \textbf{Probe 2}   		& \textbf{Mittelwert}\\
+		\hline
+		Carbonatgehalt		&	 \SI{7,5}{\mpercent}		&  \SI{10,3}{\mpercent}		& \SI{8,9}{\mpercent}\\
+		TIC					&	\SI{9}{\gram \per \kg}	& \SI{12,3}{\gram \per \kg}	& \SI{10,7}{\gram \per \kg}  \\
+		\hline
+	\end{tabular}
+\end{figure}
+\FloatBarrier
+
+%\subsubsection{Mittlerer Carbonatgehalt}
+%\begin{flalign}
+%	\chi_{\text{Abfall-Carbonat,mittel}} &= \frac{\chi_1+\chi_2}{2} = \frac{7,5\%+10,3\%}{2}\\[2mm]
+%										 &= \underline{\underline{8,9\%}}
+%\end{flalign}
 
 \newpage
 
@@ -114,7 +155,7 @@ Die aufgenommenen Messergebnisse mit den zugehörigen Graphen des Computerprogra
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.59\textwidth]{img/CaCO3_k1}
+	\includegraphics[width=0.75\textwidth]{img/CaCO3_k1}
 	\caption{Messkurve 1 für Kalibrierung mit \ce{CaCO3}}
 	\label{dia:k1}
 \end{figure}
@@ -124,7 +165,7 @@ Die aufgenommenen Messergebnisse mit den zugehörigen Graphen des Computerprogra
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.59\textwidth]{img/CaCO3_k2}
+	\includegraphics[width=0.75\textwidth]{img/CaCO3_k2}
 	\caption{Messkurve 2 für Kalibrierung mit \ce{CaCO3}}
 	\label{dia:k2}
 \end{figure}
@@ -134,7 +175,7 @@ Die aufgenommenen Messergebnisse mit den zugehörigen Graphen des Computerprogra
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.59\textwidth]{img/Muell_V1}
+	\includegraphics[width=0.75\textwidth]{img/Muell_V1}
 	\caption{Messkurve für Müllprobe 1}
 	\label{dia:m1}
 \end{figure}
@@ -144,7 +185,7 @@ Die aufgenommenen Messergebnisse mit den zugehörigen Graphen des Computerprogra
 %Start
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.59\textwidth]{img/Muell_V2}
+	\includegraphics[width=0.72\textwidth]{img/Muell_V2}
 	\caption{Messkurve für Müllprobe 2}
 	\label{dia:m2}
 \end{figure}
@@ -159,12 +200,12 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 	\begin{center}
 		\begin{tikzpicture}
 		\begin{axis}[
-		xlabel={$m \left[\si{\milli \gram}\right]$},
+		xlabel={$m_{Carbonat} \left[\si{\milli \gram}\right]$},
 		ylabel={$\Phi \left[\si{\micro \volt \minute}\right]$},
 		xmin = 0,
 		xmax = 120,
 		width= 15cm,
-		height=7cm,
+		height=6cm,
 		ymin=0,
 		ymax=70000,
 		axis x line=bottom,
@@ -189,14 +230,13 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 		\end{axis}%
 		\end{tikzpicture}%
 	\end{center}
-	\caption{Kalibrierkurve zur Bestimmung des Carbonatgehaltes der \\  Müllprobe 2}
+	\caption{Kalibrierkurve zur Bestimmung des Carbonatgehaltes der  Müllprobe II}
 	\label{dia:kalibrierkurve}
 \end{figure}
 \FloatBarrier
-
-
+\vspace*{-7mm}
 \subsubsection{Abweichung von Kalibrierkurve}
-
+\vspace*{-3mm}
 \begin{flalign}
 \label{gl:abweichung}
 	a	&= \frac{\Phi_{Mess}-\Phi_{Kali}}{\Phi_{Kali}}\\[2mm]
@@ -209,62 +249,46 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 
 \newpage
 
-\section{Bestimmung des TC}
+\subsection{Bestimmung des TC}
 \label{sec:tc}
-\subsubsection{Bestimmung des TC der originalen Abfallprobe über Mittelwertbildung}
-Berechnung mit mittlerem Carbonatgehalt ($TIC$) und Glühverlust ($TOC$):
-\begin{flalign}
-	TC	&= TIC+TOC\\
-		&= 8,9\%+23,5\% = 32,4\%\\
-		&= \frac{\SI{32,4}{\gram}}{\SI{100}{gramm}}=\frac{\SI{324}{\gram}}{\SI{1000}{gramm}}\\
-		&\approx \underline{\SI{324}{\gram \per \kg}}
-\end{flalign}
+\textcolor{red}{Bisschen Text und Verweis auf Durchführung wären schön}\\
+Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert von \SI{274,26}{\gram \per \kg} für den $TC$ der originalen Müllprobe II.
 
-Berechnung mit mittlerem Carbonatgehalt (TIC) und vorbehandelter TIC Probe mit TC-Analyse (TOC):
-\begin{flalign}
-TC	&= TIC+TOC\\
-	&= \SI{89}{\gram \per \kg}+\SI{43,85}{\gram \per \kg}\\
-	&\approx \underline{\SI{133}{\gram \per \kg}}
-\end{flalign}
-
-Mittelwert beider Herangehensweisen:
-\begin{flalign}
-	TC 	&= \frac{\SI{133}{\gram \per \kg}+\SI{324}{\gram \per \kg}}{2}\\[2mm]
-		&= \underline{\underline{\SI{228,5}{\gram \per \kg} \quad (22,85\%)}}
-\end{flalign}
-\FloatBarrier
-
-Analog dazu ergab die direkte Messung mittels \textit{Analysegerät} einen Wert von \SI{274,26}{\gram \per \kg} für den $TC$.
-\vspace*{-5mm}
 \begin{figure}[h!]
-\renewcommand{\arraystretch}{1.2}
+	\renewcommand{\arraystretch}{1.2}
 	\centering
-	\caption{Daten zum TC-Gehalt}
-	\begin{tabular}{c|c|c||c}
-	\hline
-	\textbf{TOC mit Glühverlust} & \textbf{TOC mit Analysegerät} & \textbf{Mittelwert} & \textbf{Analysegerät} \\
-	\hline
-	\SI{324}{\gram \per \kg} & \SI{133}{\gram \per \kg} & \SI{228,5}{\gram \per \kg} & \SI{274,26}{\gram \per \kg}\\
-	\hline
-	 32,4 \% & 13,3 \% & 22,85 \% & 27,43 \%\\
-	\hline
+	\caption{TC der Blindprobe, der originalen und der vorbehandelten Abfallprobe}
+	\label{tab:tc_messung}
+	\begin{tabular}{c|c|c}
+		\hline
+		\textbf{Probe} & \textbf{Probenmenge} & \textbf{Messwert}  \\
+		\hline
+		Blindprobe				&	\SI{234,3}{\milli \gram}	& \SI{0,41}{\mpercent}	\\
+		Original				&	\SI{79,0}{\milli \gram}	& \SI{27,43}{\mpercent}		 \\
+		Vorbehandelt mit TIC	&	\SI{474,9}{\milli \gram}	& \SI{4,39}{\mpercent}\\
+		\hline
 	\end{tabular}
 \end{figure}
 \FloatBarrier
 
-\vspace*{-5mm}
+\subsection{Bestimmung des TOC}
+\textcolor{red}{ÜBERARBEITEN MIT TOC BERECHNUNG}
+\begin{flalign}
+	TOC	&= TC-TIC
+\end{flalign}
+
 \begin{figure}[h!]
 	\renewcommand{\arraystretch}{1.2}
 	\centering
-	\caption{Daten zu den Kohlenstoffgehalten}
-	\label{tab:tc}
+	\caption{Daten zu den Kohlenstoffgehalten der originalen Abfallprobe II}
+	\label{tab:kohlenstoffgehalte}
 	\begin{tabular}{c|c|c||c}
 		\hline
-		\textbf{Kohlenstofftyp} & \textbf{Messwert 1} & \textbf{Messwert 2} & \textbf{Mittelwert}  \\
+		\textbf{Kohlenstofftyp} & \textbf{Messwert} & \textbf{Berechnet} & \textbf{Mittelwert}  \\
 		\hline
-		TOC		&	23,45\%		& 4,39\%	& $\approx 14\%$\\
-		TIC		&	7,5\%		& 10,3\%	& $\approx 9\%$ \\
-		TC		&	22,85\%		& 27,43\%	& $\approx 25\%$ \\
+		TC		&	\SI{27,43}{\mpercent}	& -							& $\approx \SI{27}{\mpercent}$ \\
+		TIC		&	\SI{1,1}{\mpercent}		& -							& $\approx \SI{1}{\mpercent}$ \\
+		TOC		&	-						& \SI{26,33}{\mpercent}		& $\approx \SI{26}{\mpercent}$\\
 		\hline
 	\end{tabular}
 \end{figure}
@@ -317,7 +341,7 @@ IS_{\text{org.}} &\approx \SI{100}{\percent}-\SI{25}{\percent}-\SI{3}{\percent}\
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
 	\centering
-	\caption{Daten zu Trockensubstanz, Wassergehalt, Glühverlust und Inertstoffgehalt \\ der Müllprobe 2}
+	\caption{Daten zu Trockensubstanz, Wassergehalt, Glühverlust und \mbox{Inertstoffgehalt} \\ der Müllprobe 2}
 	\label{tab:ts_w_gv}
 	%\resizebox{10cm}{!}{
 	\begin{tabulary}{1.2\textwidth}{C|CC|CC}
