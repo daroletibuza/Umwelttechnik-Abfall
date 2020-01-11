@@ -36,7 +36,7 @@
 	\multicolumn{2}{l|}{TC Blindwert (z.B. gebrannter Kalk)}  &0,2343 &4,11 \\
 	\multicolumn{2}{l|}{TC orig. Abfall (nach Trocknung)}  &0,0790 & 274,26\\
 	\multicolumn{2}{l|}{TC TIC-Mischprobe (nach Trocknung)}  & 0,4749& 43,85\\
-	\multicolumn{2}{l|}{Chlorgehalt orig. Abfall (\SI{80}{\milli\liter} aus \SI{160}{\milli\liter})}  & - & 0,855 (0,085\%)\\
+	\multicolumn{2}{l|}{Chlorgehalt orig. Abfall (\SI{80}{\milli\liter} aus \SI{160}{\milli\liter})}  & - & $2*0,855=1,71$ (\SI{0,17}{\mpercent})\\
 	\end{tabulary}
 }
 	\label{master_messwerttabelle}
@@ -252,30 +252,24 @@ Um die Messwerte im Vergleich zu den Blindproben beurteilen zu können sind dies
 
 \subsection{Bestimmung des TC}
 \label{sec:tc}
-Die Bestimmung des $TC$-Gehaltes erfolgt mittels \textit{Analysegerät} und ergibt einen Wert von \SI{274,26}{\gram \per \kg} der originalen Müllprobe II. Parallel erfolgte ebenfalls eine Bestimmung des $TC$s für eine Blindprobe mit Calciumcarbonat und der via $TIC$-Bestimmung vorbehandelten Probe. Die Messwerte für alle drei Proben sind in Tab. \ref{tab:tc_messung} aufgeführt.
-
+Die Bestimmung des $TC$-Gehaltes erfolgt mittels Analytik-Brennkammer und ergibt einen Wert von \SI{274,26}{\gram \per \kg} der originalen Müllprobe II. Parallel erfolgte ebenfalls eine Bestimmung des $TC$s für eine Blindprobe mit Calciumoxid und der via $TIC$-Bestimmung vorbehandelten Probe. Die Messwerte für alle drei Proben sind in Tab. \ref{tab:tc_messung} aufgeführt. 
+\vspace*{-2.5mm}
 \begin{figure}[h!]
 	\renewcommand{\arraystretch}{1.2}
 	\centering
 	\caption{TC der Blindprobe, der originalen und der vorbehandelten Abfallprobe}
 	\label{tab:tc_messung}
-	\begin{tabular}{c|c|c}
+	\begin{tabular}{c|c|cc}
 		\hline
-		\textbf{Probe} & \textbf{Probenmenge} & \textbf{Messwert}  \\
+		\textbf{Probe} & \textbf{Probenmenge} & \textbf{Messwert}  & \textbf{Massenanteile}\\
 		\hline
-		Blindprobe				&	\SI{234,3}{\milli \gram}	& \SI{0,41}{\mpercent}	\\
-		Original				&	\SI{79,0}{\milli \gram}	& \SI{27,43}{\mpercent}		 \\
-		Vorbehandelt mit TIC	&	\SI{474,9}{\milli \gram}	& \SI{4,39}{\mpercent}\\
+		Blindprobe				&	\SI{234,3}{\milli \gram}	&\SI{4,11}{\gram \per \kg} &\SI{0,41}{\mpercent}	\\
+		Original				&	\SI{79,0}{\milli \gram}	& \SI{274,26}{\gram \per \kg} &\SI{27,43}{\mpercent}		 \\
+		Vorbehandelt mit TIC	&	\SI{474,9}{\milli \gram}	& \SI{43,85}{\gram \per \kg} &\SI{4,39}{\mpercent}\\
 		\hline
 	\end{tabular}
 \end{figure}
 \FloatBarrier
-
-
-\textcolor{red}{Diskussion: In wie fern Passt das mit TIC - müsste bei ca. 26\% liegen oder ?\\
-Man könnte davon ausgehen, dass man damit den TOC Gehalt bestimmt hätte. Da ja aber NaOH und Phosphorsäure zugegeben wurde, ist die Masse der originalen Probe beeinflusst und der Wert mit 4,39\% nicht richtig. Man könnte zur Probe den Wert berechnen ohne NaOH und Phosphorsäure- ist mir zu aufwendig[aus 25ml naoh zur Neutralisation folgen 11g NaOH Massezuwachs in trockenmasse][und 3,5g bis 4g Phosphorsäure,ebenfalls trocken][aus 10 ml Phosphorsäure und 25 ml Natriumhydroxidlösung folgen dann 15 gramm Massegewinn]}
-\textbf{15 gramm durch Säure und Base sind echt heftig auf die geringe Masse des fluffigen Mülls. Das hat sicherlich die Werte vom Glühverlust und so reingeritten. Ich sehe halt leider in Tab.4.1 nicht recht durch. Hätte gern verglichen ob man das sieht. aber welche Probe ist die die aus dem 1. Versuch mitgeführt wurde? 
-	auch der TOC wird darunter geschwunden sein(siehr Rückseite vom Abendlichen schmierblatt...)}
 
 \subsection{Bestimmung des TOC}
 An dieser Stelle wird ergänzend die Bestimmung des $TOC$ aufgezeigt.\linebreak
@@ -307,8 +301,6 @@ Falls der $TOC$ für eine Auswertung wirklich relevant sollte, ist eine Bestimmu
 	\end{tabular}
 \end{figure}
 \FloatBarrier
-
-\textcolor{red}{Diskussion: TOC fehlt}
 
 \newpage
 
@@ -347,9 +339,9 @@ GV_{\text{org.}} &= \frac{\SI{2,878}{\gram}-\SI{2,203}{\gram} }{\SI{2,878}{\gram
 \subsubsection{Bestimmung des Inertstoffgehaltes $\boldsymbol{IS}$}
 %VERBENNUNG
 \begin{flalign}
-IS\left[\%\right]				&= \SI{100}{\percent}-TC-W\\
-IS_{\text{org.}} &\approx \SI{100}{\percent}-\SI{25}{\percent}-\SI{3}{\percent}\\
-&\approx \underline{\SI{72}{\percent}}
+IS\left[\%\right]				&= \SI{100}{\percent}-GV_{org.}\\
+IS_{\text{org.}} &\approx \SI{100}{\percent}-\SI{23,45}{\percent}\\
+&\approx \underline{\SI{76,55}{\percent}}
 \end{flalign}
 
 %Tabelle START
